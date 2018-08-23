@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ligth-Bot-App
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+  <h2>
+      Por favor escoja una combinacion de comandos
+  </h2>
+  <div class="button-bar">
+      <button ion-button (click)="game(1)" icon-only class="my-button-foward" color="bot"> 
+        <ion-icon name="imgbot-forward" color="dark" ></ion-icon>
+      </button>
+      <button ion-button (click)="game(2)" icon-only class="my-button-left" color="bot"> 
+        <ion-icon name="imgbot-left" color="dark" ></ion-icon>
+      </button>
+  </div>
+  <div class="button-bar-2">
+      <button ion-button (click)="game(3)" icon-only class="my-button-rigth" color="bot" >
+        <ion-icon name="imgbot-right" color="dark" ></ion-icon>
+      </button>
+      <button ion-button (click)="game(4)" icon-only class="my-button-jump" color="bot">
+        <ion-icon name="imgbot-jump" color="dark">
+        </ion-icon>
+      </button>
+  </div>
+  <div class="button-bar-3">
+      <button ion-button (click)="game(5)" icon-only class="my-button-ligth" color="bot">
+        <ion-icon name="imgbot-ligth" color="dark" ></ion-icon>
+      </button>
+      <button ion-button (click)="alerta()" icon-only class="my-button-Ok" color="bot" >
+        <ion-icon name="md-checkmark-circle-outline" color="dark" ></ion-icon>
+      </button>
+  </div>
+
+</ion-content>
