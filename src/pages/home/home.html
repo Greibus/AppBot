@@ -11,30 +11,55 @@
   <h2>
       Por favor escoja una combinacion de comandos
   </h2>
-  <div class="button-bar">
-      <button ion-button (click)="game(1)" icon-only class="my-button-foward" color="bot"> 
+      <!-- BOTONES DE COMANDOS-->
+      <button ion-button large (click)="game(1)" icon-only class="my-button-foward" color="bot"> 
         <ion-icon name="imgbot-forward" color="dark" ></ion-icon>
       </button>
-      <button ion-button (click)="game(2)" icon-only class="my-button-left" color="bot"> 
+      <button ion-button (click)="game(2)" icon-only class="my-button-jump" color="bot">
+          <ion-icon name="imgbot-jump" color="dark">
+          </ion-icon>
+        </button>
+      <button ion-button large (click)="game(3)" icon-only class="my-button-left" color="bot"> 
         <ion-icon name="imgbot-left" color="dark" ></ion-icon>
       </button>
-  </div>
-  <div class="button-bar-2">
-      <button ion-button (click)="game(3)" icon-only class="my-button-rigth" color="bot" >
+      <button ion-button large (click)="game(4)" icon-only class="my-button-rigth" color="bot" >
         <ion-icon name="imgbot-right" color="dark" ></ion-icon>
       </button>
-      <button ion-button (click)="game(4)" icon-only class="my-button-jump" color="bot">
-        <ion-icon name="imgbot-jump" color="dark">
-        </ion-icon>
-      </button>
-  </div>
-  <div class="button-bar-3">
-      <button ion-button (click)="game(5)" icon-only class="my-button-ligth" color="bot">
+      <button ion-button small (click)="game(5)" icon-only class="my-button-ligth" color="bot">
         <ion-icon name="imgbot-ligth" color="dark" ></ion-icon>
       </button>
-      <button ion-button (click)="alerta()" icon-only class="my-button-Ok" color="bot" >
+      <!-- INTENTO CON ION CARD PARA PONER A LOS BOTONES, PARA QUE SE
+      RELLENARAN CON LAS INDICACIONES-->
+      <ion-card>
+          <ion-card-content>
+            <button ion-button (click)="game(6)" icon-only class="my-button-p1" color="bot">
+              <ion-icon name="imgbot-p1" color="dark">
+              </ion-icon>
+            </button>
+          </ion-card-content>
+      </ion-card>
+      <button ion-button large (click)="game(7)" icon-only class="my-button-p2" color="bot" >
+          <ion-icon name="imgbot-p2" color="dark" ></ion-icon>
+        </button>
+      <!-- BOTONES PARA ENVIAR O BORRAR LOS COMANDOS-->
+      <button ion-button large (click)="enviar()" icon-only class="my-button-Ok" color="bot" >
         <ion-icon name="md-checkmark-circle-outline" color="dark" ></ion-icon>
       </button>
-  </div>
+      <button ion-button large (click)="eliminar()" icon-only class="my-button-delete" color="bot" >
+          <ion-icon name="md-close-circle" color="dark" ></ion-icon>
+        </button>
 
+      <!-- BOTONES DE MAIN PROC1 Y PROC2 PARA SABER DONDE METER LOS COMANDOS-->
+      <button ion-button (click)="controlvariable(2)" icon-only class="my-button-proc1"color="bot">
+        <ion-icon name="ios-car-outline" color="dark">
+        </ion-icon>
+      </button>
+      <button ion-button full (click)="controlvariable(1)" icon-only class="my-button-main"color="bot">
+        <ion-icon name="ios-car-outline" color="dark">
+        </ion-icon>
+      </button>
+      <button ion-button full (click)="controlvariable(3)" icon-only class="my-button-proc2" color="bot">
+        <ion-icon name="ios-car-outline" color="dark">
+        </ion-icon>
+      </button>
 </ion-content>

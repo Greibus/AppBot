@@ -1,12 +1,12 @@
 ion-icon {
     &[class*="imgbot-"] {
         
-        mask-size: 100%;
+        mask-size: 40%;
         mask-position: 50% 50%;
         mask-repeat: no-repeat;
         background: currentColor;
-        width: 5em;
-        height: 4.5em;
+        width: 10em;
+        height: 10em;
     }
     // custom icons
     &[class*="imgbot-forward"] {
@@ -23,5 +23,11 @@ ion-icon {
     }
     &[class*="imgbot-ligth"] {
         mask-image: url(../assets/imgs/ligth.svg);
+    }
+    &[class*="imgbot-p1"] {
+        mask-image: url(../assets/imgs/P1.svg);
+    }
+    &[class*="imgbot-p2"] {
+        mask-image: url(../assets/imgs/P2.svg);
     }
 }
